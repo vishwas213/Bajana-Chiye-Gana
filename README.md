@@ -70,7 +70,7 @@ Welcome to **PrimeMusic-Lavalink**! This guide will help you set up your own mus
 [ /volume  ] - Sets the volume of the player.
 [ /ping    ] - Check bot latency.
 [ /support ] - Shows support server info.
-[ /help    ] - Display this help menu.
+[ /help    ] - Display the help menu.
 ```
 
 ## Configuration Options
