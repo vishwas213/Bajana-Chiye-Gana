@@ -1,13 +1,113 @@
 # PrimeMusic-Lavalink
-LAVALINK BOT MADE BY SHIVA.
 
-Fork the Repositry and add your bot token. Must turn on intents and run the code.
-Use /play to start playing the songs.
+## Introduction
+Welcome to **PrimeMusic-Lavalink**! This guide will help you set up your own music bot, capable of streaming music from YouTube, SoundCloud, and Spotify. This bot, made by Shiva, uses Lavalink for high-quality audio streaming. Let's get started!
 
-# Supports
-- YouTube
-- SoundCloud
-- Spotify
+## Features
+- **Supported Platforms**: YouTube, SoundCloud, Spotify
+- **Commands**: `/play` to start playing songs
+- **Customization**: Configurable themes, activity statuses, and more
 
-Links / Text / Playlists
- 
+## Requirements
+- **Node.js** version 18 or higher
+- **discord.js** version 14
+
+## Setup Guide
+
+### 1. Fork the Repository
+1. **Fork the repository** on GitHub to get your own copy.
+2. **Clone your fork** to your local machine:
+    ```bash
+    git clone https://github.com/GlaceYT/PrimeMusic-Lavalink.git
+    cd PrimeMusic-Lavalink
+    ```
+
+### 2. Configuration
+#### Bot Token and Intents
+1. **Create a new bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
+2. **Copy your bot token** and create a `.env` file in the root directory of your project:
+    ```env
+    TOKEN=YOUR_BOT_TOKEN_HERE
+    ```
+3. **Enable the required intents** in the Developer Portal:
+    - Navigate to `Bot` > `Privileged Gateway Intents`
+    - Turn on `PRESENCE INTENT`, `SERVER MEMBERS INTENT`, and `MESSAGE CONTENT INTENT`.
+
+### 3. Lavalink Setup
+1. **Lavalink Server Details** are already configured in `config.js`. If you want to use your own server, modify the `nodes` section:
+    ```javascript
+    nodes: [
+      {
+        name: "Node #1",
+        host: "your-lavalink-host",
+        port: 2333,
+        password: "your-lavalink-password",
+        secure: false
+      },
+    ]
+    ```
+
+### 4. Running the Bot
+1. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
+2. **Run the bot**:
+    ```bash
+    node index.js
+    ```
+    The bot should now be online and ready to use!
+
+## Commands
+- **/play**: Starts playing a song from a given link or search query.
+
+## Configuration Options
+### config.js
+```javascript
+
+module.exports = {
+  TOKEN: "", // Your bot token you can either put here or .env to be safe
+  ownerID: ["1004206704994566164", ""], // Bot owner IDs
+  setupFilePath: './commands/setup.json', // Setup file path
+  commandsDir: './commands', // Commands directory
+  embedColor: "#1db954", // Embed color
+  musicardTheme: "themes16", // Theme for music card (1-19)
+  activityName: "You", // Bot status activity name
+  activityType: "WATCHING", // Bot status activity type (LISTENING, PLAYING, WATCHING)
+  SupportServer: "https://discord.gg/xQF9f9yUEM", // Support server link
+  CheckmarkIcon: "https://cdn.discordapp.com/attachments/1230824451990622299/1230836684774576168/7762-verified-blue.gif", // Checkmark icon URL
+  MusicIcon: "https://media.discordapp.net/attachments/1230824451990622299/1236664581364125787/music-play.gif", // Music icon URL
+  embedTimeout: 5, // Embed timeout in seconds
+  errorLog: "", // Error log file path
+
+  // Lavalink Server Details
+  nodes: [
+    {
+      name: "Node #1",
+      host: "lava-v3.ajieblogs.eu.org",
+      port: 80,
+      password: "https://dsc.gg/ajidevserver",
+      reconnectTimeout: 5000,
+      reconnectTries: Infinity,
+      secure: false
+    },
+  ]
+}
+```
+## Troubleshooting
+- **Bot not responding?** Check if the token is correct and the intents are enabled.
+- **Music not playing?** Ensure the Lavalink server details are correct and the server is running.
+
+## Additional Resources
+- **Discord.js Documentation**: [discord.js.org](https://discord.js.org/)
+- **Lavalink Documentation**: [freya.io/Lavalink](https://freya.io/Lavalink/)
+
+## Support
+Join our [Support Server](https://discord.gg/mH5djUtBCX) for any help or questions.
+
+## Contributors
+- **Shiva** - Original creator
+- **Dante** - Random guy
+
+## YouTube Tutorial
+For a step-by-step video guide on setting up the PrimeMusic, check out our [YouTube tutorial](https://youtu.be/M_7TAJ9oqcs?si=p8-vc4T6KrxkoZlM).
