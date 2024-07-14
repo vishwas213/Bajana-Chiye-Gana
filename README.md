@@ -59,7 +59,19 @@ Welcome to **PrimeMusic-Lavalink**! This guide will help you set up your own mus
     The bot should now be online and ready to use!
 
 ## Commands
-- **/play**: Starts playing a song from a given link or search query.
+```css
+[ /play    ] - Start playing the songs.
+[ /pause   ] - Pause the current song.
+[ /resume  ] - Resume the current song.
+[ /lyrics  ] - Displays the lyrics of a song.
+[ /skip    ] - Skip the current song.
+[ /stop    ] - Destroys the music player.
+[ /np      ] - Shows now playing song.
+[ /volume  ] - Sets the volume of the player.
+[ /ping    ] - Check bot latency.
+[ /support ] - Shows support server info.
+[ /help    ] - Display this help menu.
+```
 
 ## Configuration Options
 ### config.js
