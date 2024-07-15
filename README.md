@@ -5,8 +5,7 @@ Welcome to **PrimeMusic-Lavalink**! This guide will help you set up your own mus
 
 ## Features
 - **Supported Platforms**: YouTube, SoundCloud, Spotify
-- **Commands**: `/play` to start playing songs
-- **Customization**: Configurable themes, activity statuses, and more
+- **Customization**: Configurable musicard themes, buttons, and more
 
 ## Requirements
 - **Node.js** version 18 or higher
