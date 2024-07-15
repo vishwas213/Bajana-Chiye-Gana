@@ -110,7 +110,7 @@ module.exports = {
 ```
 ## Troubleshooting
 - **Bot not responding?** Check if the token is correct and the intents are enabled.
-- **Music not playing?** Ensure the Lavalink server details are correct and the server is running.
+- **Music not playing?** Ensure the Lavalink server details are correct and change the lavalink some public ones may not work.
 
 ## Additional Resources
 - **Discord.js Documentation**: [discord.js.org](https://discord.js.org/)
