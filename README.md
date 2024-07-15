@@ -46,6 +46,8 @@ Welcome to **PrimeMusic-Lavalink**! This guide will help you set up your own mus
       },
     ]
     ```
+2. Alternatively, you can use pre-hosted Lavalink servers. For example, you can use servers from [lavalink.darrennathanael.com](https://lavalink.darrennathanael.com/).
+   *Just make sure you are using the v3 version.*
 
 ### 4. Running the Bot
 1. **Install the dependencies**:
