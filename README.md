@@ -107,6 +107,13 @@ module.exports = {
   ]
 }
 ```
+## Configuration Themes
+These are images for some of the themes we have for the music card:
+
+![Theme 1](https://private-user-images.githubusercontent.com/82333197/348460473-a4338251-00cf-47e2-b90d-f568f023eb7e.png)
+![Theme 2](https://private-user-images.githubusercontent.com/82333197/348439269-d83bd2ab-e328-41a0-97ab-d122f41b914a.png)
+![Theme 3](https://private-user-images.githubusercontent.com/82333197/348439267-699f6e68-a8b6-4a5c-be5f-f42077d94e98.png)
+
 ## Troubleshooting
 - **Bot not responding?** Check if the token is correct and the intents are enabled.
 - **Music not playing?** Ensure the Lavalink server details are correct and change the lavalink some public ones may not work.
