@@ -24,6 +24,7 @@
 module.exports = {
   TOKEN: "",
   ownerID: ["1004206704994566164", ""], 
+  mongodburi: "Mongodb+sav://shiva@musicbotyt.ouljywv.mongodb.net/?retrywrites+true&w+majority" ,
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
